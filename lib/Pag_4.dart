@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
@@ -29,9 +30,12 @@ class _Pag_4State extends State<Pag_4> {
       ),
       body: ListView(
         children: <Widget>[
+
           _Avatar(),
           _Bottom(),
+
         ],
+
       ),
     );
   }
@@ -71,7 +75,7 @@ class _AvatarState extends State<_Avatar> {
                 alignment: Alignment.center,
                 child: CircleAvatar(
                   radius: 100,
-                  backgroundColor: Color(0xff476cfb),
+                  backgroundColor: Colors.black12,
                   child: ClipOval(
                     child: SizedBox(
                       width: 180,
@@ -113,12 +117,13 @@ class _Bottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(children: <Widget>[
+      child: Column(
+          children: <Widget>[
         SizedBox(
-          height: 20,
+          height: 80,
         ),
         ButtonBar(
-          alignment: MainAxisAlignment.spaceEvenly,
+          alignment: MainAxisAlignment.center,
           children: <Widget>[
             RaisedButton(
                 child: Text('Concluir'), color: Colors.blue, onPressed: () {}),
