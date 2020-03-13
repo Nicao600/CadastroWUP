@@ -39,6 +39,7 @@ class _Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height * 0.5,
       padding: EdgeInsets.all(20),
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
         SizedBox(
@@ -74,9 +75,9 @@ class _Text extends StatelessWidget {
             hintText: 'Link rede social',
           ),
         ),
-        SizedBox(
-          height: 30,
-        ),
+        //SizedBox(
+         // height: 30,
+       // ),
       ]),
     );
   }
@@ -86,12 +87,16 @@ class _Bottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height * 0.5,
       child: Column(
         children: <Widget>[
-          SizedBox(
-            height: 20,
-          ),
-          ButtonBar(
+         // SizedBox(
+         //   height: 20,
+        // ),
+          Container(
+
+            height: MediaQuery.of(context).size.height * 0.25,
+           child:ButtonBar(
             alignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               RaisedButton(
@@ -103,16 +108,24 @@ class _Bottom extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
-            height: 80,
           ),
-          Text(
+         // SizedBox(
+           // height: 80,
+         // ),
+         Container(
+           height: MediaQuery.of(context).size.height * 0.025,
+         child: Text(
             'Developed by WUP',
             style: TextStyle(color: Colors.black45),
+
           ),
-          Text(
+         ),
+          Container(
+            height: MediaQuery.of(context).size.height * 0.065,
+           child: Text(
             'Support by wuprojectgo@gmail.com',
             style: TextStyle(color: Colors.black45),
+          ),
           ),
         ],
       ),

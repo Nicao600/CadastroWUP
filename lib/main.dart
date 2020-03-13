@@ -9,6 +9,6 @@ void main() {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
       ),
-      home: new Pag_4()
+      home: new Pag_3()
   ));
 }
